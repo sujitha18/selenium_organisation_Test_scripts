@@ -23,6 +23,8 @@ False
 driver.find_element_by_link_text("Organizations").click()
 driver.find_element_by_xpath("//input[@type='checkbox']").click()
 driver.find_element_by_xpath("//input[@class='crmbutton small delete']").click()
+# if we want delete for particular organisation name  use these xpath
+#driver.find_element_by_xpath("//a[@title='Organizations' and text()='samsung0011']/../..//input").click()
 #using alert class accept the pop up
 alt=driver.switch_to.alert
 alt.accept()
